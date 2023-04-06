@@ -1,0 +1,136 @@
+/*Variables*/
+:root {
+  --bg-color: bisque;
+  --button-color: rgb(127, 134, 130);
+  --text-color: grey;
+  --bg-color2: rgb(252, 206, 150);
+  --button-text-color: rgb(255, 140, 0);
+}
+
+body {
+  background-color: bisque;
+  padding: 40px 120px;
+}
+
+.header {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  
+}
+
+/* Pseudo efect for links */
+a {
+    color: var(--button-text-color);
+}
+
+a:hover {
+    color:rgb(89, 88, 95);
+}
+
+a:active {
+    color: red;
+}
+
+/* 
+a:visited {
+    color: rgb(58, 58, 189)
+}
+*/
+
+.nav {
+  max-width: 1276;
+  margin: 0 auto;
+}
+
+.nav a {
+  margin: 10px 20px;
+}
+
+.items {
+  background-color: var(--bg-color2);
+  border-radius: 40px;
+  padding: 20px;
+  border: 2px solid;
+  border-color: var(--text-color);
+  width: 30%;
+  justify-content: center;
+  margin: 100px;
+  align-items: center;
+  flex: 1;
+}
+
+.item-image {
+  display: flex;
+  justify-content: center;
+}
+
+/*Design the Flex box*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*min max sizing*/
+  flex: 1 200px;
+  /*flex-flow: row-wrap;*/
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  border: 1px;
+  border-radius: 20px;
+  border-color: var(--button-text-color);
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+ul, h4 {
+  color: gray;
+  font-family: courier;
+  font-size: 15px;
+}
+
+/* Style the button */
+
+button {
+  font-size: 20px;
+  width: 30%;
+  padding: 10px 0;
+  background-color: white;
+  border: 2px solid var(--text-color);
+  border-radius: 10px;
+  color: var(--button-text-color);
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background-color: var(--button-color);
+  color: white;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:active {
+  background-color: var(--button-color);
+  color: white;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.24),
+     0 12px 30px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(3px);
+  width: 29%;
+  font-size: 19.5px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
